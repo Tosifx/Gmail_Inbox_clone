@@ -1,0 +1,491 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	border: 0px;
+	margin: 0px;
+	font-family: arial, sans-serif;
+}
+
+.container {
+	width: 100%;
+	float: left;
+	
+}
+
+/* top section */
+
+.row {
+	width: 100%;
+	float: left;
+	padding: 8px 0px;
+}
+
+.bar {
+	width: 2%;
+	margin: 5px 12px 0px 12px;
+	float: left;
+	text-align: center;
+	
+}
+
+.fa-bars {
+	font-size: 16px;
+	color: #5f6368;
+	padding: 12px;
+}
+
+.fa-bars:hover{
+	cursor: pointer;
+	border-radius: 50%;
+	background-color:rgba(202, 196, 194, 0.5);
+}
+
+.gmail-logo {
+	height: 40px;
+	width: 15%;
+	background: url("glogo.png") no-repeat left center;
+	background-size: 100px;
+	margin: 8px auto auto 4px;
+	float: left;
+}
+
+h1{
+	float: left;
+	color: #5f6368;
+	margin: 4px 0px 4px 50px;
+	font-size: 24px;
+}
+
+.gmail-logo:hover, h1:hover{
+	cursor: pointer;
+}
+
+.input {
+	width: 60%;
+	float: left;
+	margin-top: 5px;
+}
+
+
+
+.search {
+	float: left;
+	padding: 14px 36px 14px 40px;
+	width: 82%;
+	font-size: 16px;
+	margin-bottom: 4px;
+	margin-left: 2px;
+	border-radius: 5px;
+	border: none;
+	background: url("search.png") no-repeat left center,
+	url("tune.png") no-repeat right center;
+	background-size: 20px;
+	background-position-x: 1%, 97%;
+	background-color: #eeeeee;
+}
+
+.search:focus{
+	outline:none;
+}
+
+#active {
+	padding: 8px;
+	border-radius: 16px;
+	margin: 10px 5px 0px 30px;
+	border: 1px solid #5f6368;
+	background-color: white;
+	float: right;
+}
+
+#active:hover{
+	background-color:rgba(202, 196, 194, 0.5);
+	cursor: pointer;
+}
+
+.fa-circle {
+	color: green;
+	margin-right: 3px;
+	margin-left: 8px;
+}
+.fa-caret-down {
+  	margin-left: 3px;
+  	margin-right: 8px;
+}
+
+.right-icons {
+	float: left;
+	padding: 4px;
+	width: 19%;
+	margin: 8px 0px 0px 20px;
+	/* background: url("../assets/icons/settings.png") left center no-repeat,
+	url("../assets/icons/help.png") center center no-repeat,
+	url("../assets/icons/dots-menu.png") no-repeat right center;
+	background-size: 24px, 24px, 20px;
+	background-position-x: 2%, 20%, 40%; */
+}
+
+.help{
+	width: 15%;
+	padding: 18px;
+	float: left;
+	background: url("help.png") no-repeat center center;
+	background-size: 24px;
+}
+
+.settings{
+	width: 10%;
+	padding: 18px;
+	float: left;
+	margin-left:6px;
+	background: url("settings.png") no-repeat center center;
+	background-size: 24px;
+}
+
+.dots1{
+	width: 10%;
+	padding: 18px;
+	float: left;
+	margin-left:6px;
+	background: url("dots-menu.png") no-repeat center center;
+	background-size: 16px;
+}
+
+.help:hover, .settings:hover, .dots1:hover{
+	border-radius: 50%;
+	background-color:rgba(202, 196, 194, 0.5);
+	cursor:pointer;
+}
+
+
+.circle {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	float: left;
+	border-radius: 50%;
+	padding: 8px 12px;
+	background-color: #ad8b73;
+	margin-left: 2px;
+	color: #fff;
+}
+
+.name{
+	float: left;
+	margin-top:5px;
+	padding-right: 15px;
+	font-size: 20px;
+	margin-left: 8px;
+}
+
+
+hr {
+	margin-bottom: 10px;
+	color: #eeeeee;
+	opacity: 0.1;
+}
+
+
+/* Navigation left */
+
+.nav-left {
+	clear: both;
+	width: 19%;
+	margin: 0 auto;
+	float: left;
+}
+
+.compose {
+	color: #d93025;
+	padding: 14px 18px;
+	cursor: pointer;
+	border-radius: 24px;
+	margin: 0px 0 0 10px;
+	font-size: 16px;
+	background-color: white;
+	border: 1px solid #eeeeee;
+	box-shadow: 0 0 3px #d1d1d1;
+}
+
+.compose:hover{
+	box-shadow:0 0 15px rgba(202, 196, 194, 1);
+	background-color: rgba(232, 227, 225, 0.1);
+	cursor:pointer;
+}
+
+.fa-pencil {
+	background-color: white;
+	padding-right: 10px;
+	font-size: 15px;
+}
+
+.fa-pencil:hover{
+	background-color: rgba(232, 227, 225, 0.1);
+}
+
+.shortcuts {
+	padding: 8px 4px;
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+.functions {
+ 	margin-top: 5px;
+	padding: 10px 5px;
+}
+
+.important:hover{
+	background-color:rgba(202, 196, 194, 0.5);
+	cursor:pointer;
+}
+
+.border:hover{
+	cursor: row-resize;
+}
+
+.fa-caret-right {
+ 	padding-right: 10px;
+}
+
+.fa-plus {
+	margin-left: 150px;
+	color: #5f6368;
+}
+
+.custom {
+ 	margin-left: 162px;
+}
+
+
+
+
+
+/* Middle container */
+
+.center {
+  	width: 76%;
+  	float: left;
+	margin-top: 5px;
+	
+}
+
+.top{
+	width: 100%;
+	float:left;
+}
+
+.top-left{
+	width: 50%;
+	float: left;
+	margin-left: 5px;
+
+}
+
+.square{
+	width: 5%;
+	padding:1px;
+	float:left;
+	margin-top: 5px;
+}
+.fa-square{
+	font-size: 18px;
+	color: grey;
+}
+
+.dropdown{
+	width: 5%;
+	float: left;
+	margin-top: 5px;
+}
+
+.refresh{
+	width: 5%;
+	float: left;
+	margin: 5px 5px 5px 25px;
+}
+
+.fa-caret-down{
+	color: grey;
+}
+.fa-arrow-rotate-right{
+	font-size: 18px;
+	color: grey;
+}
+
+
+.dots{
+	width:2%;
+	float: left;
+	margin: 5px 5px 5px 25px;
+	
+}
+
+.fa-ellipsis-vertical{
+	font-size: 18px;
+}
+
+
+.top-right{
+	width:48%;
+	float: right;
+}
+.gt{
+	width: 5%;
+	float:right;
+	margin: 0 0 0 4px;
+}
+
+.lt{
+	width: 5%;
+	float: right;
+	margin: 0 0 0 4px;
+}
+
+.fa-angle-right, .fa-angle-left{
+	font-size: 16px;
+	color: grey;
+	padding: 1px;
+}
+
+.number{
+	width: 25%;
+	float: right;
+	margin: 0px 8px;
+}
+
+p{
+	font-size:14px;
+	margin-top: 0;
+	color: grey;
+	padding: 1px;
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+	/* Main content*/
+
+.section{
+	width: 100%;
+	height: 520px;
+	overflow: auto;
+	
+}
+
+.mail{
+	width: 100%;
+	float: left;
+	padding: 5px 0px;
+	border: 1px solid rgba(195, 188, 186, 0.2) ;
+	background-color: rgba(227, 230, 249, 0.5)
+}
+
+.fa-star{
+	color: grey;
+}
+.fa-star:hover, .fa-square:hover{
+	color: black;
+}
+.mail:hover{
+	cursor: pointer;
+	box-shadow: 0 0 5px rgba(202, 196, 194, 1);
+}
+
+.mail-left{
+	width: 20%;
+	float: left;
+	padding: 5px;
+}
+
+.text-left{
+	margin-left: 5px;
+}
+
+.mail-middle{
+	width: 76%;
+	float: left;
+	padding: 6px;
+	margin-left: 40px;
+	
+}
+
+.text-right{
+	float: right;
+	margin-right: 10px;
+}
+
+.text-right, .text-left, .text-middle{
+	font-size: 14px;
+}
+
+
+/**/
+/* Navigation right */
+
+.nav-right {
+  	float: left;
+  	width: 5%;
+	text-align: center;
+	border-left: 1px solid rgba(223, 216, 214, 0.5);
+	
+}
+
+.calender{
+	margin: 10px 15px;
+}
+
+.idea, .admin, .check, .calender{
+	margin: 18px 15px;
+	padding: 8px 0;
+	border-radius: 50%;
+}
+
+.idea:hover, .admin:hover, .check:hover, .calender:hover{
+	background-color:rgba(202, 196, 194, 0.5);
+}
+
+.fa-calendar{
+	color:green;
+}
+
+.fa-lightbulb{
+	color: #FFE61B;
+}
+
+.fa-circle-check{
+	color: #2FA4FF;	
+}
+
+.fa-circle-user{
+	color: blue;
+}
+
+
+
+.plus{
+	margin:0;
+	padding: 0;
+	font-size:10px;
+}
+
+.angle-right, .addition{
+	margin: 220px 15px 0 15px;;
+	padding: 8px 0;
+	border-radius: 50%;
+}
+
+.addition{
+	margin: 30px 15px;
+}
+
+.angle-right:hover, .addition:hover{
+	background-color:rgba(202, 196, 194, 0.5);
+}
+
+.hr{
+	width: 40%;
+}
+
+	
